@@ -3,9 +3,14 @@
 
 using namespace std;
 void clockType::setTime(int hours, int minutes, int seconds){
-	hr = hours;
-	min = minutes;
-	sec = seconds;
+	if(hours > 23 || hours < 0){hr = 0;}
+	else{hr = hours;}
+
+	if(minutes > 59 || minutes < 0){min = 0;}
+    else{min = minutes;}
+
+    if(seconds>59 || seconds < 0){sec=0;}
+    else {sec = seconds;}
 }
 
 void clockType::getTime(int& hours, int& minutes, int& seconds){

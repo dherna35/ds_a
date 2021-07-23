@@ -40,7 +40,7 @@ public:
 	clockType();
 	// Default constructor - does not take any inputs
 	// postcon: time set do default - hr = 0, min = 0, sec = 0
-	
+
 private:
 	int hr; // stores hour val
 	int min; //stores minute value
