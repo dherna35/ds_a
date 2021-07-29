@@ -86,13 +86,13 @@ int main() {
 	}
 
 	//Test 5. Test the equalTime function by making a copy of the test4 data
-	clockType test5 = test4;
-	if(test5.equalTime(test4)){
-	    cout<<"Test 5 passed";
-	}
-	else{
-	    cout<<"Test 5 failed";
-	}
-
+//	clockType test5 = test4;
+//	if(test5.equalTime(test4)){
+//	    cout<<"Test 5 passed";
+//	}
+//	else{
+//	    cout<<"Test 5 failed";
+//	}
+//
     return 0;
 }
