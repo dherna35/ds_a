@@ -7,11 +7,21 @@
 using namespace std;
 
 void factorer::setVar(const int& inVar){
-    var = inVar;
+    if(inVar < 1){
+        var = 1;
+    }
+    else{
+        var = inVar;
+    }
     calculatePower();
 }
 void factorer::setBase(const int& inBase){
-    base = inBase;
+    if (inBase < 2){
+        base = 2;
+    }
+    else {
+        base = inBase;
+    }
     calculatePower();
 }
 void factorer::printVar(){
