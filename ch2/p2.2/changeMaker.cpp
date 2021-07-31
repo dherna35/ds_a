@@ -11,6 +11,7 @@ void changeMaker::makeChange(float money) {
     cout <<"|            Making change            |";
     cout<< "--------------------------------------"<<endl;
     for(int i = 0; i < sizeof(coins); i++){
+
         cout << floor(money/coins[i]) <<"currency units of value "<<coins[i];
         money = money/coins[i] - floor(money/coins[i]);
     }
